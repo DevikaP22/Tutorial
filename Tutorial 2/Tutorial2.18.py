@@ -1,0 +1,15 @@
+
+
+def fact(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * fact(n - 1)
+
+# Get user input
+num = int(input("Enter a number: "))
+
+# Validate input
+if num < 0:
+    print("Factorial is not defined for negative numbers.")
+else:
+    print(f"Factorial of {num} is {fact(num)}")
